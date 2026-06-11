@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visionary Agency - Profile</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#0b1c30",
+                    "surface-tint": "#0051e0",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#b5c4ff",
+                    "on-primary-fixed": "#00164d",
+                    "on-primary-fixed-variant": "#003cac",
+                    "tertiary": "#4a5a6f",
+                    "primary-fixed": "#dbe1ff",
+                    "on-secondary-container": "#5c647a",
+                    "primary-container": "#1b63ff",
+                    "on-surface": "#191c1e",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#b5c4ff",
+                    "outline": "#737687",
+                    "surface-variant": "#e0e3e5",
+                    "surface-container-high": "#e6e8ea",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "on-primary-container": "#f6f5ff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#f4f6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#dae2fd",
+                    "primary": "#004cd2",
+                    "inverse-surface": "#2d3133",
+                    "surface-container-low": "#f2f4f6",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "surface-container-highest": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "surface-bright": "#f7f9fb",
+                    "tertiary-container": "#627289",
+                    "on-secondary-fixed": "#131b2e",
+                    "surface": "#f7f9fb",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#dae2fd",
+                    "secondary": "#565e74",
+                    "on-surface-variant": "#424656",
+                    "tertiary-fixed": "#d3e4fe",
+                    "on-background": "#191c1e",
+                    "outline-variant": "#c3c5d8",
+                    "surface-dim": "#d8dadc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "section-gap": "80px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-lg": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["15px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Gooey Filter for the Bottom Bar */
+        .gooey-filter {
+            filter: url('#goo');
+        }
+        
+        .active-glow {
+            box-shadow: 0 0 20px rgba(0, 76, 210, 0.4);
+        }
+
+        /* Glassmorphism subtle lift */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .menu-item-hover:hover {
+            background-color: #EFF6FF;
+            transform: translateX(4px);
+        }
+    </style>
+<style>
+    body {
+      min-height: 100dvh;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile h-14 w-full max-w-container-max mx-auto md:px-margin-desktop">
+<div class="flex items-center gap-3">
+<button class="text-primary hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="font-display-lg-mobile text-[24px] font-extrabold tracking-tighter text-primary">Visionary</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20 px-margin-mobile max-w-md mx-auto md:max-w-container-max md:px-margin-desktop">
+<!-- Profile Hero Section - Compact -->
+<section class="flex flex-col items-center text-center mb-6">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/10 rounded-full scale-110 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-white shadow-md overflow-hidden relative z-10">
+<img alt="Julian Rivera" class="w-full h-full object-cover" data-alt="A professional headshot of a young man with short dark hair and a neat beard, looking thoughtfully slightly off-camera. He is wearing a minimalist grey jacket against an urban, architectural background with clean lines. The lighting is soft, natural, and flattering, creating a premium and visionary aesthetic that matches the digital agency's sophisticated corporate modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS3aIXgfUQZ8p_Op1n60YiMpu5Q4ZH2JkECpnMjkvRcWUiWALo_S0jv-1C0MltE1EMS1EFE8U8keHHw7P8dc_k9shWi1KtMjoTuSgen4uOv8f8WpaF41O40jdSuIakB9M1j4vBAIAo5-AD_oYDroBqgR8_ENTI_1j1igxZhe0zV-Q_uwzJEfBk34WQWWakioq3xg8w1uubwyjPujQB4_k_Gbf-Gb2HQrlLUuNhvZZa3X5DgiKHSvIMt6QylJn5YfvA41xRaEf-5B0"/>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-on-primary w-8 h-8 rounded-full shadow-md flex items-center justify-center z-20 border-2 border-white active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]" data-icon="edit">edit</span>
+</button>
+</div>
+<h1 class="mt-4 font-headline-lg text-headline-lg text-on-surface">Julian Rivera</h1>
+<p class="font-body-md text-on-surface-variant text-[14px]">Senior Product Designer • Visionary Member</p>
+<div class="mt-3 flex gap-2">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-md font-label-sm text-[11px]">Active Learner</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md font-label-sm text-[11px]">Tech Lead</span>
+</div>
+</section>
+<!-- Profile Bento Menu - Reduced gaps and padding -->
+<section class="grid grid-cols-1 gap-2.5 mb-12">
+<!-- Bento Row 1 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+<button class="flex items-center gap-3 p-4 bg-white shadow-sm rounded-md menu-item-hover transition-all duration-300 group">
+<div class="w-10 h-10 bg-primary/10 text-primary rounded-md flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="book_online">book_online</span>
+</div>
+<div class="text-left">
+<h3 class="font-headline-md text-[16px]">My Bookings</h3>
+<p class="font-body-md text-on-surface-variant text-[12px]">Manage consultations</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline text-[20px]" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="flex items-center gap-3 p-4 bg-white shadow-sm rounded-md menu-item-hover transition-all duration-300 group">
+<div class="w-10 h-10 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-md flex items-center justify-center group-hover:bg-tertiary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="monitoring">monitoring</span>
+</div>
+<div class="text-left">
+<h3 class="font-headline-md text-[16px]">Course Progress</h3>
+<p class="font-body-md text-on-surface-variant text-[12px]">78% Completed</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline text-[20px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Bento Row 2 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+<button class="flex items-center gap-3 p-4 bg-white shadow-sm rounded-md menu-item-hover transition-all duration-300 group">
+<div class="w-10 h-10 bg-surface-container-high text-on-surface-variant rounded-md flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="settings">settings</span>
+</div>
+<div class="text-left">
+<h3 class="font-headline-md text-[16px]">Settings</h3>
+<p class="font-body-md text-on-surface-variant text-[12px]">Security &amp; Privacy</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline text-[20px]" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="flex items-center gap-3 p-4 bg-white shadow-sm rounded-md menu-item-hover transition-all duration-300 group">
+<div class="w-10 h-10 bg-error-container text-on-error-container rounded-md flex items-center justify-center group-hover:bg-error group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="contact_support">contact_support</span>
+</div>
+<div class="text-left">
+<h3 class="font-headline-md text-[16px]">Support</h3>
+<p class="font-body-md text-on-surface-variant text-[12px]">24/7 Priority Concierge</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline text-[20px]" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Logout -->
+<button class="flex items-center gap-3 p-4 bg-surface-container-low/50 rounded-md border border-outline-variant/30 hover:bg-surface-container-high transition-colors mt-2">
+<span class="material-symbols-outlined text-error text-[20px]" data-icon="logout">logout</span>
+<span class="font-headline-md text-[16px] text-error">Sign Out</span>
+</button>
+</section>
+</main>
+<!-- Floating Gooey Bottom Nav Bar -->
+<nav class="fixed bottom-4 left-0 right-0 z-50 flex justify-around items-center px-4 py-2 pointer-events-none">
+<div class="bg-inverse-surface rounded-full p-1.5 flex items-center gap-1 shadow-2xl relative pointer-events-auto gooey-filter">
+<!-- Home -->
+<a class="flex items-center justify-center text-on-surface-variant p-2.5 hover:bg-surface-variant/50 rounded-full transition-colors active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-white/70" data-icon="home">home</span>
+</a>
+<!-- Services -->
+<a class="flex items-center justify-center text-on-surface-variant p-2.5 hover:bg-surface-variant/50 rounded-full transition-colors active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-white/70" data-icon="layers">layers</span>
+</a>
+<!-- Courses -->
+<a class="flex items-center justify-center text-on-surface-variant p-2.5 hover:bg-surface-variant/50 rounded-full transition-colors active:scale-90 duration-300" href="#">
+<span class="material-symbols-outlined text-white/70" data-icon="school">school</span>
+</a>
+<!-- Profile (Active State with Gooey Effect) -->
+<div class="relative flex items-center gap-2 bg-primary text-on-primary rounded-full px-3 py-1.5 transition-all duration-500 ease-in-out active:scale-90">
+<div class="w-6 h-6 rounded-full overflow-hidden border border-primary-fixed">
+<img alt="Profile Small" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Os5uqo1vE2_j2seWjYrVa1T_QEPyvceL414_ykEXxntd30tM3IHN3BMCss0BPXr2S74fQ4JiRFeH4neZFiN26TSm-a89RgFn4XtZFBlrqem95vuWapDPs1SQzsywt4PWsvD8V99JBZBSrEyIjGh3msYbrhtAVtijmDp4H0RMmiOXPOwjZspbdAztwLfcBr5eDG-gLe6Y-9y0-tp0SH9EXxWVbqZmdkpVjge8bW0hFbXVl2rfae4mAiX2jcWFT6wx2r8UqjQl4Qg"/>
+</div>
+<span class="font-label-md text-[13px] whitespace-nowrap pr-1">Profile</span>
+</div>
+</div>
+</nav>
+<!-- Gooey Filter Definition -->
+<svg class="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="goo">
+<fegaussianblur in="SourceGraphic" result="blur" stddeviation="10"></fegaussianblur>
+<fecolormatrix in="blur" mode="matrix" result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"></fecolormatrix>
+<fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+</filter>
+</defs>
+</svg>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'scale(0.98)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = '';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+    </script>
+</body></html>

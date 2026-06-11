@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Courses | Visionary Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#0b1c30",
+                        "surface-tint": "#0051e0",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#b5c4ff",
+                        "on-primary-fixed": "#00164d",
+                        "on-primary-fixed-variant": "#003cac",
+                        "tertiary": "#4a5a6f",
+                        "primary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#5c647a",
+                        "primary-container": "#1b63ff",
+                        "on-surface": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "outline": "#737687",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "on-primary-container": "#f6f5ff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#f4f6ff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#dae2fd",
+                        "primary": "#004cd2",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-container-highest": "#e0e3e5",
+                        "background": "#f7f9fb",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary-container": "#627289",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface": "#f7f9fb",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dae2fd",
+                        "secondary": "#565e74",
+                        "on-surface-variant": "#424656",
+                        "tertiary-fixed": "#d3e4fe",
+                        "on-background": "#191c1e",
+                        "outline-variant": "#c3c5d8",
+                        "surface-dim": "#d8dadc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "16px",
+                        "margin-mobile": "16px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gooey-nav {
+            filter: url('#goo');
+        }
+        .course-card-shadow {
+            box-shadow: 0px 10px 30px -10px rgba(15, 23, 42, 0.08);
+        }
+        .course-card-shadow:hover {
+            box-shadow: 0px 15px 40px -12px rgba(15, 23, 42, 0.12);
+        }
+        body {
+            background-color: #f7f9fb;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="text-on-background pb-32">
+<!-- Top AppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-surface-variant/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-14 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">menu</span>
+<h1 class="font-display-lg-mobile text-[20px] font-extrabold tracking-tighter text-primary">Visionary Agency</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:opacity-80 transition-opacity text-[20px]">search</button>
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:opacity-80 transition-opacity text-[20px]">notifications</button>
+</div>
+</div>
+</header>
+<main class="mt-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Header & Filter -->
+<section class="mb-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="font-headline-lg text-2xl text-on-surface mb-1">Master Your Craft</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl">
+                        Expert-led courses for digital visionary leaders.
+                    </p>
+</div>
+<div class="flex flex-col gap-4 w-full md:w-auto">
+<div class="relative w-full md:w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-md py-3 pl-10 pr-4 focus:ring-2 focus:ring-primary transition-all text-label-md font-label-md" placeholder="Search courses..." type="text"/>
+</div>
+</div>
+</div>
+<div class="flex gap-2 mt-4 overflow-x-auto pb-2 no-scrollbar">
+<button class="px-4 py-1.5 bg-primary text-on-primary rounded-md font-label-md text-sm whitespace-nowrap">All Courses</button>
+<button class="px-4 py-1.5 bg-white text-on-surface-variant rounded-md font-label-md text-sm border border-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">UI/UX Design</button>
+<button class="px-4 py-1.5 bg-white text-on-surface-variant rounded-md font-label-md text-sm border border-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">Web Dev</button>
+<button class="px-4 py-1.5 bg-white text-on-surface-variant rounded-md font-label-md text-sm border border-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">Mobile App</button>
+<button class="px-4 py-1.5 bg-white text-on-surface-variant rounded-md font-label-md text-sm border border-surface-variant hover:bg-surface-container-high transition-colors whitespace-nowrap">Interviews</button>
+</div>
+</section>
+<!-- Courses Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Course 1 -->
+<div class="group bg-white rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 course-card-shadow border border-surface-container-low">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A premium close-up of a designer's desk featuring a modern laptop showing high-fidelity UI designs. The lighting is soft and cinematic with cool blue and crisp white tones. The environment is minimalist and hyper-professional, reflecting a visionary agency's workspace. Sharp focus on the screen with a beautiful bokeh background of a clean digital studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCaVWIxJdFOoOQWtk_o-NwxpH6KJSOXdVt0DKWVzGDUNxwYIX0EnYLGb-BYvS0vGrvcqVl7_izOUiEdLdgmU5vFRvuSEtQWI2IfZ7MW1K6pehW6DukSm0UzOvCgF8mY-BdUy39746Fzu6WQrYqeCCqZnRgn4PA2HNro2SzYYoO2Mc2ctTM3qN62l335-BWoNrlkztb4K1cwE5KDb_TDH67DHmjNzkERv7jYD5AGTTwQfVGHNrxDg11i-3c1dQsBnvhPqx02YqspH4"/>
+<div class="absolute top-3 left-3 bg-primary/90 backdrop-blur-sm text-on-primary px-3 py-1 rounded text-[10px] font-bold tracking-wider uppercase">UI/UX DESIGN</div>
+</div>
+<div class="p-5">
+<h3 class="font-headline-md text-on-surface mb-2">Professional Product Design</h3>
+<p class="font-body-md text-on-surface-variant mb-4 line-clamp-2">Master the end-to-end process of high-end digital product design from wireframing to prototyping.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-label-md">12 Weeks</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span class="text-xs font-label-md">450+</span>
+</div>
+</div>
+<span class="font-headline-md text-primary">$499</span>
+</div>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="group bg-white rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 course-card-shadow border border-surface-container-low">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-tech coding environment showcasing clean lines of code on a vertical monitor. The lighting uses neon electric blue accents against a deep charcoal background to create a futuristic developer atmosphere. Transparent layers and glassmorphism elements are visible in the workstation setup. The mood is focused, visionary, and intensely modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB45TuwA4-5bRXKDdXIgrL6N6OeObNi5nazGfJ35nXX4rYLgoENXqUucJD-uaxvHnCczoRYT8mHsr-jDlebJSfJvLQ2o-ApeTY_8_bqPTdVXAR2Gh6m8diWMojBkpNHZHjwF8yg6NdjeCqeAgYYBuckelP8ymVLcFgywicddXtDdsRx1vIZu8_6pVqypF9rgPzXA7iz27N2ZOMMnFsFZmWKwp9Ae3mspI6-hX3ZhmRxdwrrOX8lGHA6PEyIYU7auECW5qtoKHq_REk"/>
+<div class="absolute top-3 left-3 bg-tertiary-container/90 backdrop-blur-sm text-on-tertiary-container px-3 py-1 rounded text-[10px] font-bold tracking-wider uppercase">WEB DEVELOPMENT</div>
+</div>
+<div class="p-5">
+<h3 class="font-headline-md text-on-surface mb-2">Modern Full-Stack Mastery</h3>
+<p class="font-body-md text-on-surface-variant mb-4 line-clamp-2">Learn to build scalable, high-performance web applications using the latest industry frameworks.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-label-md">16 Weeks</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span class="text-xs font-label-md">320+</span>
+</div>
+</div>
+<span class="font-headline-md text-primary">$699</span>
+</div>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="group bg-white rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 course-card-shadow border border-surface-container-low">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A sleek mobile interface being tested on a high-end smartphone held by a professional developer. The background is a blurred, airy office space with bright natural lighting and minimalist white furniture. The scene is crisp and high-resolution, featuring vibrant electric blue accents in the UI on the phone screen. The overall aesthetic is clean, corporate modern, and forward-thinking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Eqshq5ZPUDf6wnvTzmAWUVyvs8Dwq4SaBz9aeMG9huMvZRxww8fSeM22wgyvKM9A5-bJKXInfSjOKbQl0gE-3wWlDG-KX0sUbPTLemMGPTO0dDWo3AHLdi0qGrmEhBb-lSP2anWMcIUKBF6fpb06r7W3KnVnaMWnHL-iO_nc0qgU-vljJnGPD4VcptLX4jUhdw5nzI_h8fWWIpUXt-HbHnj1v3SVr7KMd-6sMjy4BEFjEP6jFvKcP67VXFxAT9_fO_VLML0Og6w"/>
+<div class="absolute top-3 left-3 bg-on-secondary-fixed-variant/90 backdrop-blur-sm text-white px-3 py-1 rounded text-[10px] font-bold tracking-wider uppercase">MOBILE APP</div>
+</div>
+<div class="p-5">
+<h3 class="font-headline-md text-on-surface mb-2">Native iOS &amp; Android Dev</h3>
+<p class="font-body-md text-on-surface-variant mb-4 line-clamp-2">Create seamless, fluid mobile experiences using industry-standard cross-platform tools.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-xs font-label-md">10 Weeks</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span class="text-xs font-label-md">210+</span>
+</div>
+</div>
+<span class="font-headline-md text-primary">$549</span>
+</div>
+</div>
+</div>
+<!-- Course 4 (Interviews) -->
+<div class="group bg-white rounded-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-1 course-card-shadow border border-surface-container-low md:col-span-2 lg:col-span-1">
+<div class="relative h-48 overflow-hidden bg-gradient-to-br from-primary-container to-primary flex items-center justify-center">
+<div class="absolute inset-0 opacity-20">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,50 Q25,0 50,50 T100,50" fill="none" stroke="white" stroke-width="0.5"></path>
+<path d="M0,60 Q25,10 50,60 T100,60" fill="none" stroke="white" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="text-white text-center p-6 z-10">
+<span class="material-symbols-outlined text-4xl mb-2">record_voice_over</span>
+<h4 class="font-headline-md">Proxy Interview Training</h4>
+</div>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded text-[10px] font-bold tracking-wider uppercase border border-white/30">SPECIALIZED</div>
+</div>
+<div class="p-5">
+<h3 class="font-headline-md text-on-surface mb-2">Interview Success Blueprint</h3>
+<p class="font-body-md text-on-surface-variant mb-4 line-clamp-2">Exclusive coaching on high-stakes interviews, soft skills, and technical presentation for senior roles.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">person</span>
+<span class="text-xs font-label-md">1-on-1 Sessions</span>
+</div>
+</div>
+<span class="font-headline-md text-primary">$299</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Navigation Shell (Bottom Gooey Nav) -->
+<div class="fixed bottom-6 left-0 right-0 z-50 flex justify-center items-center pointer-events-none">
+<!-- Gooey Filter SVG -->
+<svg class="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="goo">
+<fegaussianblur in="SourceGraphic" result="blur" stddeviation="10"></fegaussianblur>
+<fecolormatrix in="blur" mode="matrix" result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"></fecolormatrix>
+<fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite>
+</filter>
+</defs>
+</svg>
+<nav class="gooey-nav pointer-events-auto flex items-center bg-[#1e293b] rounded-full p-1.5 h-14 shadow-2xl">
+<!-- Courses (Active - Blue Pill) -->
+<a class="flex items-center gap-2 bg-primary text-on-primary rounded-full px-5 py-2 transition-all duration-300 active:scale-95 mx-1 h-full" href="#">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="font-label-md text-xs">Courses</span>
+</a>
+<!-- Home -->
+<a class="flex items-center justify-center text-outline p-3 hover:text-white transition-colors mx-1 h-10 w-10 rounded-full" href="#">
+<span class="material-symbols-outlined text-[20px]">home</span>
+</a>
+<!-- Services -->
+<a class="flex items-center justify-center text-outline p-3 hover:text-white transition-colors mx-1 h-10 w-10 rounded-full" href="#">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</a>
+<!-- Profile -->
+<a class="flex items-center justify-center text-outline p-3 hover:text-white transition-colors mx-1 h-10 w-10 rounded-full overflow-hidden" href="#">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="A professional headshot of a young male creative director in a stylish modern office. Soft natural lighting, shallow depth of field, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCji8eH0s3dQFigkSRb9wrD5u-BJLIBRxchaxq5guB4tH7ExuXL_L_L7J3asEMi7WssUTA1_UHxTIAkFOBD4XZp-q86z29--kguIlIoSPTq5Bzam93GPoR-nqMRskbx9cPu-L9Xf0DH8pU8DoOh2V9fdWNuv80g6A4z-ajofV9lu1loGCbZEHtUdFZepuNENcOt6uyHKH94FjMWMRG3jmZZ-jNc1yY7C3BIRs2eatm608w86xM_lhaTUrHguliDf2bQRrpHrwqiM"/>
+</a>
+</nav>
+</div>
+<!-- Micro-interaction Script -->
+<script>
+        // Tab switching logic (simple visual)
+        const navItems = document.querySelectorAll('nav a');
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                // In a real app, this would route. 
+                console.log('Navigating to:', item.textContent.trim());
+            });
+        });
+
+        // Hover lift effect for cards handled by Tailwind classes, 
+        // but we can add an observer for scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-6');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(card => {
+            card.classList.add('transition-all', 'duration-500', 'opacity-0', 'translate-y-6');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
